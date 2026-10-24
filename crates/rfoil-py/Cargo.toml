@@ -1,0 +1,15 @@
+[package]
+name = "rfoil-py"
+description = "Python bindings for rfoil-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+rfoil-core = { path = "../rfoil-core" }
+pyo3 = { version = "0.30", features = ["extension-module", "abi3-py310"] }

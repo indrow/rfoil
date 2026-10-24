@@ -1,0 +1,10 @@
+[package]
+name = "rfoil-core"
+description = "Viscous/inviscid airfoil analysis in pure Rust"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+thiserror = "2"

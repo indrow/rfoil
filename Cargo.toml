@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = ["crates/rfoil-core", "crates/rfoil-py"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+authors = ["Indra Wibisono <indrawibisono@duck.com>"]
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

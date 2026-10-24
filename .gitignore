@@ -1,0 +1,7 @@
+/target
+__pycache__/
+*.so
+*.egg-info/
+.venv/
+/dist/
+.fuse_hidden*
